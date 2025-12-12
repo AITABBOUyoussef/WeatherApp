@@ -5,6 +5,7 @@ body {
   justify-content: center;
   row-gap: 10px;
   height: 80vh;
+ font-family: sans-serif;
 }
 .app {
   display: flex;
@@ -18,6 +19,7 @@ body {
   border-radius: 15px;
   box-shadow: 10px 10px 10px 10px #6ea4b775;
 }
+
 .logo {
   font-size: 26px;
   color: aliceblue;
@@ -62,9 +64,8 @@ body {
 }
 .sun{
     width: 60px;
-    height: 60px;
-    
-}
+    height: 60px;   
+   }
 .des{
     display: flex;
     flex-direction: row;
@@ -78,3 +79,55 @@ h2{
     font-size: 36px;
     
 }
+ 
+
+        body.dark-mode {
+           
+            color: white;
+            background-image: url(img/dark3.avif);
+        }
+body.dark-mode .des{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+        
+        .checkbox-mkhbbi {
+            display: none; 
+        }
+
+        .label-switch {
+            background-color: #ccc; 
+            width: 60px;
+            height: 30px;
+            border-radius: 30px; 
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+
+       
+        .label-switch::after {
+            content: "";
+            background-color: white;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transition: 0.3s;
+        }
+
+      
+        .checkbox-mkhbbi:checked + .label-switch {
+            background-color: #4CAF50; 
+        }
+
+        
+        .checkbox-mkhbbi:checked + .label-switch::after {
+            transform: translateX(30px);
+        }

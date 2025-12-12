@@ -24,6 +24,20 @@ function app() {
                         CT.textContent=data.name;
                         let state =document.getElementById("cm")
                         state.textContent = data.weather[0].main.toLowerCase();
+                        let etat = document.querySelector(".descriptionMeteo");
+                let conditions = data.weather[0].main.toLowerCase();
+                etat.textContent = conditions;
+
+
+                let icons = {
+                    clear: "img/rainy-4.svg",
+                    clouds:"img/rainy-4.svg",
+                    rain :"img/rainy-4.svg",
+                    snow:"img/rainy-4.svg",
+                };
+
+                let iconPic = icons[conditions] || "images/animated/weather.svg";
+                document.querySelector(".sun").src = iconPic;
                     })
                     .catch(err => console.log("Error:", err)); 
             }
@@ -31,5 +45,13 @@ function app() {
     }
 }
 
+        const toggleBtn = document.getElementById('mode-toggle');
+        
+      
+        toggleBtn.addEventListener('change', () => {
+         
+            document.body.classList.toggle('dark-mode');
+          
+        });
 
 app();
