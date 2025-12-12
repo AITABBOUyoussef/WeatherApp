@@ -1,5 +1,5 @@
 body {
-  background-image: url(skyB.jpg);
+  background-image: url(img/skyB.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ body {
   border-radius: 15px;
   border-color: rgba(240, 248, 255, 0.532);
   height: 7vh;
-  color: rgb(16, 16, 16);
+  color: rgba(31, 19, 83, 0.795);
   width: 30vw;
   background-color: rgba(240, 248, 255, 0.269);
   outline: none;
@@ -70,7 +70,8 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     width: -webkit-fill-available;
-    font-size: 17px;
+    font-size: 25px;
+    color: rgb(105, 83, 83);
 }
 h2{
     color: rgb(0, 0, 0);
