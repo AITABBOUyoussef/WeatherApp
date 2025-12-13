@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>>My Weather App</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
-      <input type="checkbox" id="mode-toggle" class="checkbox-mkhbbi">
-    <label for="mode-toggle" class="label-switch"></label>
 
-    <div class="app">
-      <div class="logo"><i class="fa-solid fa-sun"></i> WeatherApp</div>
-      <div class="sr">
-        <input id="int" type="text" placeholder="Enter city name ..." />
-        <button class="btnSr">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-      <div class="afficher">
-        <h2 id="ct">...</h2>
-        <img src="img/image.png" class="sun" />
-        <div class="des">
-          <div class="hmd">
-            <i class="fa-solid fa-droplet"></i>
-            <span id="humidity">--</span> %
-            <p>Humidité</p>
-          </div>
-          <div class="tmp">
-            <i class="fa-solid fa-temperature-three-quarters"></i>
-            <span id="temp">--</span>
-            <p>Temperature</p>
-          </div>
-          <div class="com">
-            <span id="cm">--</span>
-            <p>Condition météo</p></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>>My Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <button id="dark">dark mode</button>
+  <div class="app">
+    <div class="logo"><i class="fa-solid fa-sun"></i> WeatherApp</div>
+    <div class="sr">
+      <input id="int" type="text" placeholder="Enter city name ..." />
+      <button class="btnSr">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <div class="afficher">
+      <h2 id="ct">City</h2>
+      <img class="weather-icon" src="img/04d@4x.png" alt="Weather Icon">
+      <div class="des">
+        <div class="hmd">
+          <i class="fa-solid fa-droplet"></i>
+          <span id="humidity">--</span> %
+          <p>Humidité</p>
+        </div>
+        <div class="tmp">
+          <i class="fa-solid fa-temperature-three-quarters"></i>
+          <span id="temp">--</span>
+          <p>Temperature</p>
+        </div>
+        <div class="com">
+          <span id="cm">--</span>
+          <p>Condition météo</p>
         </div>
       </div>
     </div>
-  </body>
-  <script src="script.js"></script>
-  
+  </div>
+</body>
+<script src="script.js"></script>
+
 </html>
-
-
-
-
